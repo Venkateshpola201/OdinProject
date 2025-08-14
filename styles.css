@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/background-image.png");
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+}
+
+.credit {
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.credit a {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1.5;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header h2 {
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Input focus style */
+input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0,0,255,0.3);
+}
+
+/* Invalid input style */
+input:invalid {
+    border-color: red;
+}
+
+/* Button */
+.btn {
+    background-color: #596D48;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #4b5d3c;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #596D48;
+    text-decoration: none;
+}
